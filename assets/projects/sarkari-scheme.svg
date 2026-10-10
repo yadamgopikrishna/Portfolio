@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad-scheme" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040d21" />
+      <stop offset="50%" stop-color="#0c2340" />
+      <stop offset="100%" stop-color="#021426" />
+    </linearGradient>
+    <linearGradient id="scheme-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff9933" />
+      <stop offset="50%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#138808" />
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(30, 58, 95, 0.7)" />
+      <stop offset="100%" stop-color="rgba(15, 23, 42, 0.9)" />
+    </linearGradient>
+    <filter id="glow-scheme" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg-grad-scheme)" rx="16"/>
+
+  <!-- Top Browser Bar -->
+  <rect x="0" y="0" width="800" height="42" fill="rgba(10, 20, 40, 0.9)"/>
+  <circle cx="25" cy="21" r="5" fill="#ef4444"/>
+  <circle cx="42" cy="21" r="5" fill="#f59e0b"/>
+  <circle cx="59" cy="21" r="5" fill="#10b981"/>
+  <rect x="100" y="10" width="400" height="22" rx="6" fill="rgba(255,255,255,0.08)"/>
+  <text x="115" y="25" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="11">sarkari-scheme-finder.gov.portal/recommendations</text>
+  <rect x="700" y="10" width="75" height="22" rx="6" fill="#0284c7"/>
+  <text x="712" y="25" fill="#ffffff" font-family="sans-serif" font-size="10" font-weight="bold">MERN LIVE</text>
+
+  <!-- Banner Hero -->
+  <rect x="40" y="65" width="720" height="85" rx="12" fill="url(#card-grad)" stroke="rgba(255, 153, 51, 0.3)" stroke-width="1.5"/>
+  <rect x="40" y="65" width="6" height="85" fill="url(#scheme-accent)" rx="3"/>
+  <text x="65" y="100" fill="#ffffff" font-family="sans-serif" font-size="20" font-weight="900" letter-spacing="0.5">Sarkari Scheme Finder Portal</text>
+  <text x="65" y="125" fill="#38bdf8" font-family="sans-serif" font-size="13">🇮🇳 Personalized Central &amp; State Welfare Scheme Recommendation Engine</text>
+
+  <!-- Search & Filter Bar -->
+  <rect x="40" y="165" width="480" height="38" rx="8" fill="rgba(15, 23, 42, 0.8)" stroke="#38bdf8" stroke-width="1"/>
+  <text x="60" y="189" fill="#94a3b8" font-family="sans-serif" font-size="12">🔍 Search by Age, Income, Caste, State, Occupation (Farmer, Student, Women)...</text>
+  <rect x="535" y="165" width="110" height="38" rx="8" fill="#ff9933"/>
+  <text x="555" y="189" fill="#050811" font-family="sans-serif" font-size="12" font-weight="bold">Check Eligibility</text>
+  <rect x="655" y="165" width="105" height="38" rx="8" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)"/>
+  <text x="675" y="189" fill="#ffffff" font-family="sans-serif" font-size="12">Filters (12)</text>
+
+  <!-- Scheme Cards Grid -->
+  <!-- Card 1 -->
+  <g transform="translate(40, 220)">
+    <rect width="225" height="190" rx="10" fill="url(#card-grad)" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1"/>
+    <rect x="15" y="15" width="90" height="20" rx="4" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981"/>
+    <text x="25" y="29" fill="#10b981" font-family="sans-serif" font-size="10" font-weight="bold">100% ELIGIBLE</text>
+    <text x="15" y="60" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">PM-Kisan Samman</text>
+    <text x="15" y="80" fill="#94a3b8" font-family="sans-serif" font-size="11">₹6,000 / Year direct bank transfer to small/marginal farmers.</text>
+    <rect x="15" y="115" width="195" height="24" rx="4" fill="rgba(255,255,255,0.05)"/>
+    <text x="25" y="131" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="10">Ministry of Agriculture</text>
+    <rect x="15" y="150" width="195" height="28" rx="6" fill="#0284c7"/>
+    <text x="75" y="168" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="bold">Apply Online →</text>
+  </g>
+
+  <!-- Card 2 -->
+  <g transform="translate(285, 220)">
+    <rect width="225" height="190" rx="10" fill="url(#card-grad)" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1"/>
+    <rect x="15" y="15" width="90" height="20" rx="4" fill="rgba(56, 189, 248, 0.2)" stroke="#38bdf8"/>
+    <text x="25" y="29" fill="#38bdf8" font-family="sans-serif" font-size="10" font-weight="bold">EDUCATION</text>
+    <text x="15" y="60" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">Post-Matric Scholar</text>
+    <text x="15" y="80" fill="#94a3b8" font-family="sans-serif" font-size="11">100% Tuition fee reimbursement for Higher Education (B.Tech).</text>
+    <rect x="15" y="115" width="195" height="24" rx="4" fill="rgba(255,255,255,0.05)"/>
+    <text x="25" y="131" fill="#a855f7" font-family="'JetBrains Mono', monospace" font-size="10">State Welfare Board</text>
+    <rect x="15" y="150" width="195" height="28" rx="6" fill="#0284c7"/>
+    <text x="75" y="168" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="bold">Apply Online →</text>
+  </g>
+
+  <!-- Card 3 -->
+  <g transform="translate(535, 220)">
+    <rect width="225" height="190" rx="10" fill="url(#card-grad)" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1"/>
+    <rect x="15" y="15" width="90" height="20" rx="4" fill="rgba(234, 179, 8, 0.2)" stroke="#eab308"/>
+    <text x="25" y="29" fill="#eab308" font-family="sans-serif" font-size="10" font-weight="bold">HOUSING &amp; AID</text>
+    <text x="15" y="60" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">PMAY Urban / Gramin</text>
+    <text x="15" y="80" fill="#94a3b8" font-family="sans-serif" font-size="11">Subsidized housing interest &amp; pucca house grants for families.</text>
+    <rect x="15" y="115" width="195" height="24" rx="4" fill="rgba(255,255,255,0.05)"/>
+    <text x="25" y="131" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="10">Ministry of Rural Dev</text>
+    <rect x="15" y="150" width="195" height="28" rx="6" fill="#0284c7"/>
+    <text x="75" y="168" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="bold">Apply Online →</text>
+  </g>
+</svg>

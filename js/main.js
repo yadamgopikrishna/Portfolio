@@ -448,62 +448,89 @@ function initProjectFilters() {
    10. Project Details Modal Dynamic Content
    -------------------------------------------------------------------------- */
 const projectData = {
+  'chatbot': {
+    title: 'OG AI — Production Multimodal AI Assistant',
+    category: 'Multimodal AI & LLM Systems',
+    image: 'assets/projects/og-ai.svg',
+    summary: 'A production-grade, multimodal AI assistant designed for seamless text, document intelligence, spreadsheet analytics, image forensics, and conversational reasoning powered by Google GenAI SDK & Python 3.12.',
+    architecture: [
+      'Multimodal Processing: Ingests text, PDF documents, spreadsheet data, and images with contextual cross-modal reasoning.',
+      'Conversational Memory: Persistent session memory retaining conversation context across complex analytical queries.',
+      'Prompt Optimization: Systematic prompt engineering templates with structured JSON outputs for developer tools.',
+      'Robust Backend: High-speed asynchronous Python API server with strict error-handling and automated CI/CD workflows.'
+    ],
+    techStack: ['Python 3.12', 'Google GenAI SDK', 'FastAPI / Flask', 'NLP', 'Multimodal RAG', 'Git / GitHub Actions'],
+    github: 'https://github.com/yadamgopikrishna/chatbot'
+  },
+  'sarkari-scheme': {
+    title: 'Sarkari Scheme Finder — Government Scheme Recommendation Portal',
+    category: 'Full-Stack MERN Application',
+    image: 'assets/projects/sarkari-scheme.svg',
+    summary: 'A modern, responsive, full-stack MERN application for Indian citizens to automatically discover Central, State, and Union Territory welfare schemes tailored to their demographic, financial, occupational, educational, and agricultural profile.',
+    architecture: [
+      'Eligibility Engine: Custom rule-matching algorithm matching user profile data against dynamic scheme requirements.',
+      'MERN Architecture: React.js frontend connected to an Express.js / Node.js backend with MongoDB Atlas database.',
+      'Category Search & Filter: High-speed filtering by Age, Annual Income, Occupation, Caste, Gender, and State/UT.',
+      'Citizen Portal UI: Mobile-responsive card layouts with direct government application links and documentation guidelines.'
+    ],
+    techStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB Atlas', 'RESTful APIs', 'TailwindCSS / CSS3'],
+    github: 'https://github.com/yadamgopikrishna/sarkari-scheme-finder'
+  },
+  'agriseed': {
+    title: 'AgriSeed — Direct Agricultural Marketplace Platform',
+    category: 'E-Commerce & Agricultural Web Systems',
+    image: 'assets/projects/agriseed.svg',
+    summary: 'A digital agricultural marketplace connecting rural farmers directly with verified seed producers, certified fertilizers, and equipment, eliminating 20% to 40% middlemen markups and counteracting counterfeit farming inputs.',
+    architecture: [
+      'Direct-to-Farmer Catalog: Verified listings of certified hybrid seeds, bio-fertilizers, and organic pest protection.',
+      'Vendor Authentication: Secure role-based producer management and inventory tracking.',
+      'Order & Cart Workflow: Interactive shopping cart, instant price calculation, and order dispatch status.',
+      'Full-Stack Integration: Python Flask backend with MongoDB Atlas database and responsive frontend interface.'
+    ],
+    techStack: ['Python', 'Flask', 'MongoDB Atlas', 'JavaScript ES6+', 'HTML5', 'CSS3 Glassmorphism'],
+    github: 'https://github.com/yadamgopikrishna/AgriSeed-Marketplace'
+  },
+  'tastyhub': {
+    title: 'TastyHub — Mobile Food Discovery & Delivery App',
+    category: 'Cross-Platform Mobile Application',
+    image: 'assets/projects/tastyhub.svg',
+    summary: 'A cross-platform mobile application developed with Flutter & Dart for seamless food browsing, category filtering, cart management, and real-time ordering.',
+    architecture: [
+      'Cross-Platform UI: Native performance across Android and iOS with custom Flutter widget hierarchy.',
+      'State Management: Reactive state handling for live cart items, subtotal calculation, and delivery fees.',
+      'Menu Navigation: Interactive category carousels (Pizzas, Burgers, Biryanis, Healthy) with search filters.',
+      'REST Integration: Clean architecture separating UI presentation layers from backend data endpoints.'
+    ],
+    techStack: ['Flutter', 'Dart', 'Mobile UI Design', 'State Management', 'REST APIs', 'Android Studio'],
+    github: 'https://github.com/yadamgopikrishna/TastyHub'
+  },
   'student-pred': {
-    title: 'AI-Powered Student Performance Prediction System',
+    title: 'Student Academic Performance Predictive System',
     category: 'Machine Learning / Predictive Modeling',
     image: 'assets/projects/student-prediction.svg',
-    summary: 'A complete end-to-end Machine Learning web platform designed to analyze educational variables, study behaviors, and academic history to accurately forecast student performance scores (R² = 0.94).',
+    summary: 'A supervised machine learning predictive system designed to analyze educational variables, study behaviors, and academic history to accurately forecast student semester grades and identify at-risk students.',
     architecture: [
-      'Data Ingestion: Ingestion and cleaning of demographic, behavioral, and academic performance datasets.',
-      'Feature Engineering: Normalization, correlation analysis, and feature weight computation.',
-      'Model Training: Regression models built using Scikit-learn (Linear Regression, Random Forest Regressor).',
-      'Evaluation: Cross-validation, Mean Squared Error (MSE), Mean Absolute Error (MAE), and R² metric tracking.',
-      'Frontend Interface: Interactive prediction dashboard with live risk classification and dynamic charts.'
+      'Data Ingestion & Cleaning: Processing student academic logs, attendance percentages, and study hours.',
+      'Feature Engineering: Normalization, correlation analysis, and feature importance calculation with Pandas and NumPy.',
+      'Model Training: Supervised regression algorithms (Random Forest, Gradient Boosting) achieving 88%+ accuracy.',
+      'Evaluation & Diagnostics: Cross-validation, R² metric score tracking, and visual error analysis.'
     ],
-    techStack: ['Python', 'Pandas', 'NumPy', 'Scikit-learn', 'HTML5', 'CSS3', 'JavaScript'],
-    github: 'https://github.com/yadamgopikrishna'
-  },
-  'chatbot': {
-    title: 'Intelligent AI Chatbot',
-    category: 'Conversational AI / NLP',
-    image: 'assets/projects/ai-chatbot.svg',
-    summary: 'A modern conversational AI engine trained to parse natural language queries, classify user intentions, and deliver precise, contextual automated responses through a cybernetic glassmorphism interface.',
-    architecture: [
-      'Natural Language Processing: Tokenization, lemmatization, stop-word removal, and vocabulary building.',
-      'Intent Recognition: Supervised classification model mapping queries to structured intent categories.',
-      'Dialogue Management: Contextual state machine handling multi-turn conversational sequences.',
-      'UI/UX: Real-time typing indicators, glassmorphic message bubbles, and responsive mobile layout.'
-    ],
-    techStack: ['Python', 'NLP Fundamentals', 'HTML5', 'CSS3', 'JavaScript', 'REST API'],
-    github: 'https://github.com/yadamgopikrishna'
-  },
-  'image-classifier': {
-    title: 'AI-Based Image Classification System',
-    category: 'Computer Vision / Deep Learning',
-    image: 'assets/projects/image-classifier.svg',
-    summary: 'A computer vision application that applies convolutional neural network principles and machine learning classification algorithms to categorize imagery with confidence metrics and real-time bounding overlays.',
-    architecture: [
-      'Dataset Curation & Augmentation: Preprocessing pipelines for resizing (224x224), normalization, and data augmentation.',
-      'Feature Extraction: Deep feature embeddings capturing spatial hierarchies and edge gradients.',
-      'Classification Pipeline: Multi-class prediction output with Softmax probability distributions.',
-      'Inspection Dashboard: Visual confusion matrix and diagnostic evaluation tool.'
-    ],
-    techStack: ['Python', 'Machine Learning', 'Deep Learning Concepts', 'NumPy', 'Pandas', 'HTML5/CSS3/JS'],
+    techStack: ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Matplotlib', 'Jupyter Notebook'],
     github: 'https://github.com/yadamgopikrishna'
   },
   'portfolio-site': {
-    title: 'Personal AI Engineer Portfolio Website',
-    category: 'Full-Stack Modern Frontend',
+    title: 'Personal AI Engineer Portfolio Platform',
+    category: 'Modern Web Architecture & UX',
     image: 'assets/projects/portfolio-preview.svg',
-    summary: 'An ultra-fast, cinematic, responsive personal portfolio designed to showcase AI/ML projects, talking video reel, verified credentials, and interactive skill telemetry.',
+    summary: 'A production-grade, cinematic personal portfolio designed to showcase verified AI/ML projects, talking video telemetry, 10 official certification credentials, and interactive ATS resume preview.',
     architecture: [
       'Canvas Engine: Lightweight JavaScript particle physics canvas simulating neural constellation links.',
-      'Video Controller: Custom video player & reel modal system with zero external framework overhead.',
-      'Accessible Architecture: Semantic HTML5, ARIA labels, smooth scroll navigation, and WCAG contrast.',
-      'Modern CSS: CSS Custom Properties, backdrop filters, glowing gradients, and responsive CSS grids.'
+      'Video Controller: Custom video player with automatic reset-on-navigation and audio activation engine.',
+      'ATS Document Integration: Embedded live resume preview and consolidated multi-certificate PDF bundle.',
+      'Modern Design System: CSS Custom Properties, backdrop filters, glowing cyan/purple gradients, and responsive CSS grids.'
     ],
-    techStack: ['HTML5', 'CSS3 (Glassmorphism)', 'JavaScript ES6+', 'Canvas API', 'Modern Web Standards'],
-    github: 'https://github.com/yadamgopikrishna'
+    techStack: ['HTML5', 'CSS3 (Glassmorphism)', 'JavaScript ES6+', 'Canvas API', 'Web APIs', 'GitHub Pages'],
+    github: 'https://github.com/yadamgopikrishna/Portfolio'
   }
 };
 

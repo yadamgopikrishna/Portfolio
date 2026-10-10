@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-ogai" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b071e" />
+      <stop offset="50%" stop-color="#190d3d" />
+      <stop offset="100%" stop-color="#070314" />
+    </linearGradient>
+    <linearGradient id="purple-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="50%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <linearGradient id="card-ai" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(30, 20, 60, 0.7)" />
+      <stop offset="100%" stop-color="rgba(11, 7, 30, 0.95)" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg-ogai)" rx="16"/>
+
+  <!-- Top App Bar -->
+  <rect x="0" y="0" width="800" height="42" fill="rgba(11, 7, 30, 0.9)"/>
+  <circle cx="25" cy="21" r="5" fill="#ef4444"/>
+  <circle cx="42" cy="21" r="5" fill="#f59e0b"/>
+  <circle cx="59" cy="21" r="5" fill="#10b981"/>
+  <text x="85" y="25" fill="#c084fc" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold">✨ OG AI — Multimodal Assistant (Gemini v2.0 &amp; Python 3.12)</text>
+  <rect x="690" y="10" width="85" height="22" rx="6" fill="#8b5cf6"/>
+  <text x="702" y="25" fill="#ffffff" font-family="sans-serif" font-size="10" font-weight="bold">AI AGENT</text>
+
+  <!-- Left Sidebar (Conversations & Modalities) -->
+  <g transform="translate(30, 60)">
+    <rect width="180" height="360" rx="10" fill="rgba(255,255,255,0.03)" stroke="rgba(139, 92, 246, 0.2)" stroke-width="1"/>
+    <text x="15" y="30" fill="#a78bfa" font-family="sans-serif" font-size="11" font-weight="bold">AI MODALITIES</text>
+    
+    <rect x="10" y="45" width="160" height="32" rx="6" fill="rgba(139, 92, 246, 0.2)"/>
+    <text x="25" y="65" fill="#ffffff" font-family="sans-serif" font-size="11">📄 Document RAG</text>
+    
+    <rect x="10" y="85" width="160" height="32" rx="6" fill="rgba(255,255,255,0.05)"/>
+    <text x="25" y="105" fill="#94a3b8" font-family="sans-serif" font-size="11">🖼️ Image Forensics</text>
+    
+    <rect x="10" y="125" width="160" height="32" rx="6" fill="rgba(255,255,255,0.05)"/>
+    <text x="25" y="145" fill="#94a3b8" font-family="sans-serif" font-size="11">📊 Spreadsheet EDA</text>
+
+    <rect x="10" y="165" width="160" height="32" rx="6" fill="rgba(255,255,255,0.05)"/>
+    <text x="25" y="185" fill="#94a3b8" font-family="sans-serif" font-size="11">🎙️ Voice &amp; TTS</text>
+  </g>
+
+  <!-- Main Chat & Reasoning Window -->
+  <g transform="translate(230, 60)">
+    <rect width="540" height="360" rx="10" fill="url(#card-ai)" stroke="rgba(139, 92, 246, 0.35)" stroke-width="1.5"/>
+    
+    <!-- User Prompt Bubble -->
+    <rect x="160" y="20" width="360" height="48" rx="10" fill="rgba(56, 189, 248, 0.15)" stroke="rgba(56, 189, 248, 0.4)"/>
+    <text x="175" y="42" fill="#e2e8f0" font-family="sans-serif" font-size="12">Analyze this student dataset and predict semester GPA</text>
+    <text x="175" y="58" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="10">📎 student_scores.csv (24.8 KB)</text>
+
+    <!-- AI Thinking / Reasoning Block -->
+    <rect x="20" y="85" width="500" height="200" rx="10" fill="rgba(139, 92, 246, 0.1)" stroke="#8b5cf6" stroke-width="1"/>
+    <text x="35" y="110" fill="#a78bfa" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">⚡ OG AI Multimodal Inference Engine</text>
+    
+    <text x="35" y="135" fill="#f8fafc" font-family="sans-serif" font-size="12">• Loaded 1,200 student records across 14 academic dimensions.</text>
+    <text x="35" y="155" fill="#f8fafc" font-family="sans-serif" font-size="12">• High correlation (r = 0.84) detected between study hours and exam outcomes.</text>
+    <text x="35" y="175" fill="#38bdf8" font-family="sans-serif" font-size="12">• Forecasted Mean GPA: 7.85 / 10 (Confidence Interval: 94.2%).</text>
+
+    <!-- Code Block in AI message -->
+    <rect x="35" y="195" width="470" height="75" rx="6" fill="#050811"/>
+    <text x="45" y="215" fill="#a855f7" font-family="'JetBrains Mono', monospace" font-size="10">model = RandomForestRegressor(n_estimators=100)</text>
+    <text x="45" y="235" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="10">accuracy_score = model.evaluate(X_test, y_test)  # 0.894</text>
+    <text x="45" y="255" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="10"># Recommendation: Increase weekly lab tutorial sessions by 2 hours</text>
+
+    <!-- Chat Input Box -->
+    <rect x="20" y="300" width="500" height="42" rx="8" fill="rgba(15, 23, 42, 0.9)" stroke="rgba(255,255,255,0.15)"/>
+    <text x="35" y="325" fill="#64748b" font-family="sans-serif" font-size="12">Ask OG AI anything (supports text, PDFs, audio, code)...</text>
+    <rect x="460" y="306" width="50" height="30" rx="6" fill="#8b5cf6"/>
+    <text x="475" y="325" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold">Send</text>
+  </g>
+</svg>
