@@ -505,18 +505,19 @@ const projectData = {
     github: 'https://github.com/yadamgopikrishna/TastyHub'
   },
   'student-pred': {
-    title: 'Student Academic Performance Predictive System',
-    category: 'Machine Learning / Predictive Modeling',
+    title: 'AI-Powered Student Academic Performance Predictor & Study Planner',
+    category: 'Machine Learning & EdTech AI',
     image: 'assets/projects/student-prediction.svg',
-    summary: 'A supervised machine learning predictive system designed to analyze educational variables, study behaviors, and academic history to accurately forecast student semester grades and identify at-risk students.',
+    summary: 'An end-to-end, production-grade Machine Learning application that predicts academic performance, analyzes individual subject marks, identifies weak subjects, generates personalized improvement warnings and suggestions, and creates an actionable 7-day personalized weekly study timetable.',
     architecture: [
-      'Data Ingestion & Cleaning: Processing student academic logs, attendance percentages, and study hours.',
-      'Feature Engineering: Normalization, correlation analysis, and feature importance calculation with Pandas and NumPy.',
-      'Model Training: Supervised regression algorithms (Random Forest, Gradient Boosting) achieving 88%+ accuracy.',
-      'Evaluation & Diagnostics: Cross-validation, R² metric score tracking, and visual error analysis.'
+      'Zero-Leakage ML Pipeline: Standalone preprocessing and regression pipeline using Scikit-learn (Random Forest, Gradient Boosting, Ridge) serialized via Joblib.',
+      'Dynamic Subject Intake: Custom maximum marks, latest exam scores, confidence ratings, and strict human input validation (1.0–14.0 hrs/day).',
+      'Configurable Passing & Warning Engine: Evaluates institutional passing thresholds (40%) and performance bands (Excellent, Good, Needs Improvement, Critical).',
+      'Smart 7-Day Timetable Allocation: Intelligently balances student study schedules with dedicated revision slots for identified weak subjects.',
+      'Interactive Streamlit UI: Standalone web application with historical CSV tracking, Seaborn/Matplotlib visual diagnostics, and zero external DB dependencies.'
     ],
-    techStack: ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Matplotlib', 'Jupyter Notebook'],
-    github: 'https://github.com/yadamgopikrishna'
+    techStack: ['Python 3.12', 'Scikit-learn', 'Streamlit', 'Pandas', 'NumPy', 'Joblib', 'Matplotlib & Seaborn'],
+    github: 'https://github.com/yadamgopikrishna/student-performance-predictor'
   },
   'portfolio-site': {
     title: 'Personal AI Engineer Portfolio Platform',
